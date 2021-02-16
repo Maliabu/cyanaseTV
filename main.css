@@ -1,0 +1,59 @@
+@import '~material-design-icons/iconfont/material-icons.css';
+@import '~material-icons/iconfont/material-icons.min.css';
+@import '~material-icons/css/material-icons.css';
+
+body{
+    padding: 1% !important;
+}
+p{
+    font-size: smaller !important;
+}
+.group h6{
+    text-align: center !important;
+    padding: 3px !important;
+    border-bottom: 1px solid rgb(196, 196, 196);
+}
+.bg-light{
+    background-color: rgb(4, 116, 145) !important;
+}
+.bg-primary{
+    background-color: rgb(0, 128, 117) !important;
+}
+.text-black{
+    color: black !important;
+}
+.back{
+    background-color: goldenrod;
+}
+h4{
+    font-weight: lighter !important;
+}
+.tv{
+    background: -webkit-repeating-linear-gradient( left, red, green, blue);
+}
+.tile{
+    background-color: rgba(255, 255, 255, 0.836);
+}
+.first{
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.048),rgba(0, 0, 0, 0.589)), url("images/media.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.dropdowns {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdowns-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdowns:hover .dropdowns-content {
+    display: block;
+  }

@@ -5,15 +5,94 @@
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./node_modules/material-icons/css/material-icons.min.css">
+    <link rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Cyanase TV</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-
+    <div class="row px-5 py-1 bg-white shadow-lg text-black justify-content-center">
+      <div class="col-lg-2 rounded text-center grey lighten-3 p-1"><h6 class="font-weight-light">Cyanase Investors</h6></div>
+      <div class="w-50 col-lg-8">
+        <input type="text" placeholder="search">
+      </div>
+      <div class="col-lg-2 text-center grey lighten-3 text-black p-3 rounded">
+        <div class="dropdowns">
+          <img src="images/login.png" alt="" width="20" height="20">
+          <span class="pr-2 border-right border-dark"> Login</span> 
+          <div class="row dropdowns-content grey lighten-2 w-100">
+            <img src="images/logo.png" alt="" srcset="" width="30" height="30">
+            <h6>Login</h6>
+            <div class="row rounded grey lighten-5">
+              <form action="">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="password" name="password" id="password" placeholder="password">
+                <input type="button" value="submit" placeholder="submit" class="btn red darken-4">
+              </form>
+            </div>
+          </div>
+        </div>
+        <span class="pl-2"> SignUp </span><img src="images/signup.png" alt="" width="20" height="20">
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-3 col-lg-2 grey lighten-2 w-100 shadow-lg">
+        <img src="images/logo.png" alt="" width="70%" height="20%" class="responsive-img">
+        <h6 class=" text-center p-3 text-white font-weight-light red darken-4 rounded">Cyanase TV</h6>
+        <div class="row justify-content-center rounded tile w-100">
+          <div class="row border-bottom border-dark"><h5>Categories</h5></div>
+          <div class="col-lg-12">
+            <img src="images/tv.png" alt="" width="30" height="30"><p class="text-center"> Tv Stations</p> <div class="divider"></div>
+            <img src="images/radio.png" alt="" width="30" height="30"><p class=" text-center "> Radio Stations</p> <div class="divider"></div>
+            <img src="images/video.png" alt="" width="30" height="30"><p class=" text-center "> Video Ads</p> <div class="divider"></div>
+            <img src="images/audio.png" alt="" width="30" height="30"><p class=" text-center "> Audio Ads</p>
+          </div>
+        </div>
+        <div class="row justify-content-center rounded bg-light text-white w-100">
+          <div class="row border-bottom border-dark"><h5>Upload</h5></div>
+          <div class="col-lg-12">
+            <img src="images/video.png" alt="" width="30" height="30"><p class="text-center"> Upload your ads or videos here</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-10 col-md-9 p-3 shadow-lg bg-white text-black">
+        <div class="row grey lighten-3 rounded justify-content-center w-75 p-2">
+          <div class="col-lg-6 bg-light text-white rounded p-1"><img src="images/love.png" alt="" width="20" height="20"><span class="pr-2 border-right border-light">Top TV Shows</span> <img src="images/star.png" alt="" width="20" height="20"><span class=" ml-2">Top Radio Chats</span></div>
+          <div class="col-lg-6"><img src="images/contact.png" alt="" width="20" height="20"><span class="pr-2 border-right border-dark"> Contact Us</span> <span class="pl-2">About Us </span><img src="images/settings.png" alt="" width="20" height="20"></div></div>
+        <h4 class="font-weight-light">Welcome to Cyanase TV.</h4> <p><a href="https://cyanaseinvestors.com">Cyanase Investors </a>presents Cyanase TV. Get all your latest and vintage tv shows from all your favorite TV stations here.</p>
+        <div class="divider"></div>
+        <div class="py-3 group bg-white text-black font-weight-lighter rounded w-100 h-auto">
+          <img src="images/nbs.jpg" alt="">
+          <img src="images/ntv.jpg" alt="">
+          <img src="images/ubc.png" alt="">
+          <img src="images/u24.jpg" alt="">
+          <img src="images/magic1.jpg" alt="">
+          <img src="images/btm.jpg" alt="">
+        </div>
+        <div class="row grey lighten-3 text-black justify-content-center p-2">
+          <h6 class="p-2 rounded red darken-4 text-white text-center">Getting started</h6>
+        </div>
+      </div>
+    </div>
+    <div class="row p-3">
+      <div class="col-lg-6 rounded bg-white shadow-lg text-center">
+        <h4><u>Uploads</u></h4>
+        <p>Upload your videos and watch them live on your favorite TV stations.</p>
+      </div>
+      <div class="col-lg-6 rounded back text-white text-center">
+        <h4><u>Track your Uploads</u></h4>
+        <p>Keep track of all your uploads right here</p>
+      </div>
+    </div>
     <!-- You can also require other files to run in this process -->
+    <!-- Bootstrap Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script>let $ = require('jquery');</script>
+<script>require('popper.js');</script>
+<script>require('bootstrap');</script>
     <script src="./renderer.js"></script>
   </body>
 </html>
